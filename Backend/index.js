@@ -41,6 +41,7 @@ app.put("/completed", async function (req, res) {
     return;
   }
   await todo.update(
+    //update function expects two arguements
     {
       _id: req.body.id,
     },
